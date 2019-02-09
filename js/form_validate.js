@@ -50,22 +50,25 @@ document.getElementById('submit').addEventListener('click', function(e){
    
    });
 
+function isLetter(c) {
+    return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z');
+}
 
 function containsLettersOnly(text) {
     for (let i = 0; i < text.length; i++) {
-        if (text[i] < 'a' || text[i] > 'Z') {
+        if (!isLetter(text[i])) {
             return false;
         }
     }
 
     return true;
 }
+
 function containsLettersAndNumbers(text) {
     for (let i = 0; i < text.length; i++) {
         let c = text[i];
-        let isLetter = c >= 'a' && c <= 'Z';
         let isDigit = c >= '0' && c <= '9';
-        if (!(isLetter || isDigit)) {
+        if (!(isLetter(c) || isDigit || c == " ")) {
             return false;
         }
     }
