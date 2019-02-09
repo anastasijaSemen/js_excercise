@@ -8,15 +8,18 @@
             "nodes": [
                 {
                     "id":5,
-                    "label": "E"
+                    "label": "E",
+                    "nodes": []
                 },
                 {
                     "id":6,
-                    "label": "F"
+                    "label": "F",
+                    "nodes": []
                 },
                 {
                     "id":7,
-                    "label": "G"
+                    "label": "G",
+                    "nodes": []
                 }
             ]
         },
@@ -31,11 +34,13 @@
             "nodes": [
                 {
                     "id":8,
-                    "label": "H"
+                    "label": "H",
+                    "nodes": []
                 },
                 {
                     "id":9,
-                    "label": "I"
+                    "label": "I",
+                    "nodes": []
                 } 
             ]
         }
