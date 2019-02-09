@@ -9,7 +9,7 @@ function getNodeLabel(nodes, id) {
         if (nodes[i].id == id) { 
             return nodes[i].label;
         } else {
-            let rez = getNodeLabel(nodes[i].nodes);
+            let rez = getNodeLabel(nodes[i].nodes, id);
             if (rez != null) {
                 return rez;
             }
